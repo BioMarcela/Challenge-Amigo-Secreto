@@ -39,6 +39,10 @@ body {
     padding: 40px 0 0;
 }
 
+.logo-amigo {
+    width: 50%;   /* Reducir imagen */
+    height: auto; 
+
 /* Sección de entrada */
 .input-section {
     flex: 60%;
