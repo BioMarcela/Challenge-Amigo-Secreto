@@ -12,6 +12,13 @@ function agregarAmigo() {
         return;
     }
 
+    // Validar que no esté repetido
+    if (amigos.includes(nombre)) {
+        alert("Ese nombre ya está en la lista.");
+        input.value = "";
+        return;
+    }
+    
     amigos.push(nombre); // Guardar el nombre
     mostrarLista();      // Mostrar los amigos en pantalla
     input.value = "";    // Limpiar el campo de texto
@@ -38,3 +45,4 @@ function sortearAmigo() {
     let resultado = document.getElementById("resultadoFinal");
     resultado.innerHTML = "🎉 El amigo secreto es: " + amigos[indice];
 }
+
