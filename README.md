@@ -22,13 +22,5 @@ Amigo Secreto es una aplicación interactiva que permite organizar sorteos de in
 - **Nombre con números o caracteres especiales:** Se mostrará un mensaje de alerta indicando que solo se permiten letras.
 - **Sorteo sin participantes:** Si no hay nombres, la app alerta que no hay participantes para sortear.
 
-##  Capturas de pantalla 📸
-![Vista inicial](assets/captura-inicial.png)
-
-## Tecnologías utilizadas 💻
-- HTML
-- CSS
-- JavaScript
-
 ## Autor 📄 
 Marcela Aros
