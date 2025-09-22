@@ -40,7 +40,7 @@ body {
 }
 
 .logo-amigo {
-    width: 30%;   /* Reducir imagen */
+    width: auto;   /* Reducir imagen */
     height: auto;
 }
 
