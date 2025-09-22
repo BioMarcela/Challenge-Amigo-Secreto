@@ -3,34 +3,38 @@
 let amigos = [];
 
 function agregarAmigo() {
-   let amigo = document.getElementById("amigo").value;
-   if (amigo === "") {
-       alert("Por favor, inserte un nombre.");
-   } else {
-       amigos.push(amigo);
-       limpiarLista();
-       limpiarInput();
-       listaAmigos();
-   }
+    let input = document.getElementById("campoNombre");
+    let nombre = input.value;
+
+    // Validar que no esté vacío
+    if (nombre === "") {
+        alert("Por favor, ingresa el nombre de un amigo.");
+        return;
+    }
+
+    amigos.push(nombre); // Guardar el nombre
+    mostrarLista();      // Mostrar los amigos en pantalla
+    input.value = "";    // Limpiar el campo de texto
 }
 
-function limpiarInput() {
-    document.getElementById("amigo").value = "";
-}
-function limpiarLista(){
-    document.getElementById("listaAmigos").innerHTML = "";
-}
+function mostrarLista() {
+    let lista = document.getElementById("listaParticipantes");
+    lista.innerHTML = ""; // Borrar lista anterior
 
-function listaAmigos(){
-    let listado= document.getElementById("listaAmigos");
     for (let i = 0; i < amigos.length; i++) {
-        listado.innerHTML += `<li> ${amigos[i]} </li>`;
+        let item = document.createElement("li");
+        item.textContent = amigos[i];
+        lista.appendChild(item);
     }
 }
 
 function sortearAmigo() {
-    let resultado = document.getElementById("resultado");
-    let indice = Math.floor(Math.random()*`${amigos.length}`);
-    resultado.innerHTML = amigos[indice];
-}
+    if (amigos.length === 0) {
+        alert("No hay nombres en la lista.");
+        return;
+    }
 
+    let indice = Math.floor(Math.random() * amigos.length);
+    let resultado = document.getElementById("resultadoFinal");
+    resultado.innerHTML = "🎉 El amigo secreto es: " + amigos[indice];
+}
