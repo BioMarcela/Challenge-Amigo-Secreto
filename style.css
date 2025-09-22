@@ -164,11 +164,20 @@ ul {
 .button-reset {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
     font-size: 16px;
+    font-family: "Inter", sans-serif;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: var(--color-white);  /* Fondo blanco */
+    color: var(--color-button);           /* Texto con color del botón original */
 }
 
+.button-reset:hover {
+    background-color: #f0f0f0;  /* Fondo ligeramente gris al pasar el mouse */
+}
 
