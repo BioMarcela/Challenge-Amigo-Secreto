@@ -41,7 +41,8 @@ body {
 
 .logo-amigo {
     width: 50%;   /* Reducir imagen */
-    height: auto; 
+    height: auto;
+}
 
 /* Sección de entrada */
 .input-section {
