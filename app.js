@@ -18,7 +18,15 @@ function agregarAmigo() {
         input.value = "";
         return;
     }
-    
+
+    // Validar que solo contenga letras
+    let regex = /^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$/;
+        if (!regex.test(nombre)) {
+            alert("El nombre no puede contener números ni caracteres especiales.");
+            input.value = "";
+            return;
+}
+
     amigos.push(nombre); // Guardar el nombre
     mostrarLista();      // Mostrar los amigos en pantalla
     input.value = "";    // Limpiar el campo de texto
@@ -45,4 +53,5 @@ function sortearAmigo() {
     let resultado = document.getElementById("resultadoFinal");
     resultado.innerHTML = "🎉 El amigo secreto es: " + amigos[indice];
 }
+
 
