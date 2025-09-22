@@ -54,4 +54,11 @@ function sortearAmigo() {
     resultado.innerHTML = "🎉 El amigo secreto es: " + amigos[indice];
 }
 
+function reiniciarSorteo() {
+    amigos = [];
+    document.getElementById("listaParticipantes").innerHTML = "";
+    document.getElementById("resultadoFinal").innerHTML = "";
+    document.getElementById("campoNombre").value = "";
+}
+
 
