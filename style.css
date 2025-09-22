@@ -125,6 +125,12 @@ button {
     background-color: #a1a1a1;
 }
 
+.button-draw {
+   background-color: var(--color-primary); 
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0; 
+}
+
 /* Listas */
 ul {
     list-style-type: none;
