@@ -1,6 +1,9 @@
 # Amigo Secreto 🎉
-Proyecto realizado para la Formación de One Next Education de Alura Latam para Principiantes en Programación
-Amigo Secreto es una aplicación interactiva que permite organizar sorteos de intercambio de regalos entre amigos, familiares o compañeros de manera rápida y sencilla. Desarrollada con JavaScript, a partir de una estructura de HTML5 y una hoja de estilo CSS.
+Este proyecto fue desarrollado como parte del programa Formación One Next Education de Alura Latam para Principiantes en Programación.
+
+Amigo Secreto es una aplicación web interactiva que facilita la organización de sorteos de intercambio de regalos entre amigos, familiares o compañeros de manera rápida, sencilla y divertida.
+
+La aplicación está construida con JavaScript para la lógica del juego, utilizando una estructura en HTML5 y estilos definidos en CSS3, lo que garantiza una experiencia clara y responsiva en distintos dispositivos.
 
 ##  Capturas de pantalla 📸
 ![Vista inicial](assets/captura-inicial.png)
