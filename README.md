@@ -5,8 +5,10 @@ Amigo Secreto es una aplicación web interactiva que facilita la organización d
 
 La aplicación está construida con JavaScript para la lógica del juego, utilizando una estructura en HTML5 y estilos definidos en CSS3, lo que garantiza una experiencia clara y responsiva en distintos dispositivos.
 
-##  Capturas de pantalla 📸
+##  Captura de pantalla 📸
 ![Vista inicial](assets/captura-inicial.png)
+
+https://biomarcela.github.io/Challenge-Amigo-Secreto/
 
 ## Tecnologías utilizadas 💻
 - HTML
